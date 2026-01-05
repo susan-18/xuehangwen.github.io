@@ -1,0 +1,32 @@
+name: Deploy Website
+on:
+  push:
+    branches:
+      - main  # 如果你的主分支叫 master，请改为 master
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Build with Hugo
+        run: |
+          # 如果你用的是 Hugo 模板，这里会运行构建命令
+          # 如果只是纯静态网页，可以根据模板要求修改
+          echo "Building..."
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public # 或者是你的静态文件目录
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
