@@ -21,7 +21,7 @@ jobs:
           hugo-version: 'latest'
           extended: true # 这一行很重要，很多模板需要 extended 版本
       - name: Build with Hugo
-        run: hugo --minify --config contents/config.yml
+        run: hugo --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
