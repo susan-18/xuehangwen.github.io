@@ -1,8 +1,7 @@
-name: Deploy Website
+name: Deploy Hugo site to Pages
 on:
   push:
-    branches:
-      - main  # 如果你的主分支叫 master，请改为 master
+    branches: ["main"]
 permissions:
   contents: read
   pages: write
@@ -16,17 +15,24 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true # 这一行很重要，很多模板需要 extended 版本
       - name: Build with Hugo
-        run: |
-          # 如果你用的是 Hugo 模板，这里会运行构建命令
-          # 如果只是纯静态网页，可以根据模板要求修改
-          echo "Building..."
+        run: hugo --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public # 或者是你的静态文件目录
+          path: ./public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
