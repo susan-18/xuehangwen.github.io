@@ -1,0 +1,3 @@
+[submodule "themes/academic-hugo"]
+    path = themes/academic-hugo
+    url = https://github.com/wowthemesnet/hugo-academic-group
