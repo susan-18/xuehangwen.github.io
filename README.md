@@ -1,4 +1,4 @@
-
+ 
 
 ![Github Forks](https://img.shields.io/github/forks/senli1073/academic-homepage-template?style=flat)
 ![Github Stars](https://img.shields.io/github/stars/senli1073/academic-homepage-template?style=flat)
@@ -73,4 +73,4 @@ Fire up a browser and go to `https://<username>.github.io`
 
 ## License
 
-Copyright Sen Li, 2023-2025. Licensed under an MIT license. You can copy and mess with this template.
+Copyright Xuehang Wen, 2023-2026. Licensed under an MIT license. You can copy and mess with this template.
