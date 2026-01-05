@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive # 这行是关键，让它自动抓取 themes
           fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
