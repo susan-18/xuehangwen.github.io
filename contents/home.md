@@ -9,8 +9,8 @@ She is full-time Teacher of New Media Arts, School of Future Intelligent Art, He
 Email: wenxuehang@hbafa.edu.cn
 
 #### Education
-M.F.A., Art and Design, Donghua University, 2022—2025.
-International Exchange Student, Communication Design, Konkuk University (South Korea), 2024—2025
+M.F.A., Art and Design, Donghua University, 2022—2025.\
+International Exchange Student, Communication Design, Konkuk University (South Korea), 2024—2025\
 B.A., Visual Communication Design, Dalian Medical University, 2017—2021.
 
 #### Research Interests
