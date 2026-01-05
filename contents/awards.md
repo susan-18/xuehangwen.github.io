@@ -13,7 +13,7 @@
 
 ### Academic Honors
 
-* **Outstanding Graduate**, Dalian Medical University, 2020–2021
-* **Outstanding Individual & Academic Excellence Scholarship**, 2019–2020
-* **Outstanding Student Cadre & First-Class Scholarship**, 2018–2019
-* **"Three-Good" Student & Second-Class Scholarship**, 2017–2018
+- Outstanding Graduate**, Dalian Medical University, 2020–2021
+- Outstanding Individual & Academic Excellence Scholarship**, 2019–2020
+- Outstanding Student Cadre & First-Class Scholarship**, 2018–2019
+- "Three-Good" Student & Second-Class Scholarship**, 2017–2018
